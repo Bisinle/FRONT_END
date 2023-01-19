@@ -1,0 +1,230 @@
+body{
+    background-color: #eee;
+    color: #000;
+    outline :  10px solid rgb(0, 0, 0) !important;
+}
+
+.wrapper{
+    background-color: #eee;
+    max-width: 960px;
+    margin: 0 auto;  
+    padding: 20px;  
+}
+
+.wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+
+/*givieng the colored divs a general height and width*/
+box{
+    height: 100px;
+    width: 100px;
+}
+
+
+blue{
+    background-color: blue;
+    float: right;  
+    clear: left;  
+    
+
+
+    
+}
+
+/*removed the (.) from the class identifiers below, apply it if you wish to edit them*/
+red{
+    background-color: red;
+    float: right;
+}
+green{
+    background-color: green;
+    float: right;    
+    clear: right;
+
+
+   
+
+}
+cyan{
+    background-color: cyan;
+    float: right;
+
+}
+/*giving the service divs a general height and width and floating them left
+they are 3 and i wan them all together to take up 100% of the width,
+so each gets 29.33% + 2 for padding + 2 for margins*/
+
+#banner {
+    width: 98%;
+    max-height: 300px;    
+    overflow: hidden;
+    margin: 1%;
+    position: relative;
+   
+    
+
+}
+#banner img{
+    width: 100%;  
+    
+    
+}
+
+
+
+#banner h1{
+    color:rgb(251, 251, 251);
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+        
+     
+    }
+
+
+
+.service h2, .service p{
+    color: #999;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.service-container{
+    background-color: #fff;
+    border: 3px solid cyan;
+    max-height: 150px;
+    overflow: scroll;
+}
+
+.service-container::after{
+    content: "";
+    display: block;
+    clear:left ;
+}
+
+
+.service{
+    background-color: #ddd;
+    border-radius: 10px;
+    height: 140px;
+    width: 29%;
+    padding: 1%;
+    margin: 1%;
+    float:left;
+
+    box-shadow: 1px 1px 5px 4px rgba(0,0,0,0.44);
+-webkit-box-shadow: 1px 1px 5px 4px rgba(0,0,0,0.44);
+-moz-box-shadow: 1px 1px 5px 4px rgba(0,0,0,0.44);
+position: relative;
+   
+    
+}
+
+
+.service:nth-child(1){
+    top: 5px;    
+}
+
+.service:nth-child(2){
+    top: 20px;    
+}
+.service:nth-child(3){
+    top: 35px;    
+}
+
+
+
+
+
+.content{
+    background-color: #eee;
+    padding: 10px;
+    margin: 20px 1%;
+    clear: left;
+}
+.content p{
+    /*all the -webkit stuff can be deleted and it'll still be the same*/
+    -webkit-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 50px;
+    column-gap: 50px;
+    -webkit-column-rule: 2px solid rgb(55, 125, 125);
+    column-rule: 2px solid rgb(55, 125, 125);
+    text-align: justify;
+}
+
+
+ 
+
+.col1,.col2{
+    background-color: #ddd;
+
+    width: 46%;
+    float: left;
+    margin: 1%;
+    padding: 1%;
+
+}
+
+.col1 p,.col2 p{
+    text-align: justify;
+}
+
+
+.cloud-image{
+    width: 100%;
+    height: 300px;
+    margin: 10px 0;
+}
+
+.columns{
+    max-height: 300px;
+    border: 3px dolid rgb(8, 49, 187);
+background-color: black;
+overflow: scroll;}
+
+.columns::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+    
+.navbar ul::after{
+    content: "";
+    display: block  ;
+    clear: both;
+    
+}
+
+nav{
+    background-color: #333;
+    padding: 5px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+
+}
+
+
+
+nav  li{
+    float: right;
+    margin:  0 10px;
+    list-style: none;
+    color: white;
+}
+
+nav a{
+    text-decoration: none;
+
+}
+
+

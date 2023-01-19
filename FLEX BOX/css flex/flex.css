@@ -1,0 +1,35 @@
+.flex-container{
+    display: flex;
+    border: 2px solid black;    
+    
+}
+
+
+
+
+.box{
+    background-color: red;
+    border: 3px solid black;
+    height: 150px;
+    flex: 1 200px;
+
+}
+.box:nth-of-type(3){
+    background-color: slateblue;
+    flex: 2 200px;
+}
+
+
+.flex-container2{
+    border: 2px solid coral;
+    display: flex;
+}
+.item  {
+    background-color: powderblue;
+    border: 2px solid black;
+    flex: 200px;
+    
+}
+.item:nth-of-type(3){
+    flex:;
+}

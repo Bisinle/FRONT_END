@@ -1,0 +1,235 @@
+body{
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+.wraper{
+    background-image: url(dark.jpg) ;
+    height: 1080px;
+    
+
+
+}
+
+
+.flex-container1{
+    
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    height: 100px;
+    padding: 30px;
+
+    
+   
+}
+.flex-container1  h2{
+    margin: 0;
+    color: white;
+    height: 20px;
+
+}
+
+ul{
+    display: flex;
+    margin: 0;
+
+}
+
+
+ul li{
+    list-style-type: none;
+    text-transform: uppercase;
+    margin:0 0px;
+    color: white;
+    text-decoration: none;
+    margin: 0 30px;
+    position: relative;
+    height: 20px;
+}
+
+ul li:nth-child(1)::after,ul li:nth-child(3)::after,ul li:nth-child(5)::after{
+
+    content: "";
+    background-color: #f0094d;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 0.6s;
+}
+ul li:nth-child(1):hover::after,ul li:nth-child(3):hover::after,ul li:nth-child(5):hover::after{
+    width: 100%;
+}
+
+
+ul li:nth-child(2)::after,ul li:nth-child(4)::after {
+    content: "";
+    background-color: #f0094d;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    transition: 0.6s;
+}
+
+ul li:nth-child(2):hover::after,ul li:nth-child(4):hover::after{
+    width: 100%;
+}
+
+span{
+    color: #f0094d;
+}
+.sub{
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    background-color: #f0094d;
+    
+    border-radius: 25px;
+    height: 20px;
+    padding: 10px;
+}
+
+.sub:hover{
+    background-color: #000;
+    box-shadow: 0px 0px 10px 5px #f0094d;
+}
+
+.intro-content{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin: 150px 0;
+    position: absolute;
+    top: 50%;
+  
+ 
+
+
+}
+.intro-content p{
+    font-size: 20px;
+    margin: 10px;
+    color: white;
+    font-family: 'Sacramento', cursive;
+    font-size: 15px;
+
+}
+
+.intro-content h1{
+    margin: 0;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+
+}
+
+
+
+.input{
+    position: relative;
+    width: 70%;   
+}
+#input{
+    
+    border-radius: 25px;
+    padding: 15px;
+    width: 100%;
+    border:2px solid  #f0094d;
+}
+
+.contact-me{
+
+    background-color: #f0094d;
+    border-radius: 25px;
+    padding: 2px;
+    text-decoration: none;
+    color: white;
+    padding:10px;
+
+    position: absolute;
+    right: -25px;
+    bottom: 3px;
+
+    margin: px; 
+    border: 2px solid #f0094d;
+}
+
+.contact-me:hover{
+    background-color: #000;
+ 
+}
+
+
+/*@MEDIA SCREEN AND*/
+@media all and (max-width: 600px) {
+    
+.flex-container1{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+   align-content: space-around;
+   padding: 0;
+    
+} 
+
+.flex-container1 ul{
+    flex-wrap: wrap;
+    flex: 0 1 100px;
+    flex-direction: column;
+    width: 200px;
+    margin: auto;
+    padding: 0;
+        
+}
+
+.flex-container1 ul li{
+    display: block;
+    text-align: center;
+    margin: 5px;
+}
+
+.flex-container1 h2{
+    width: 200px;
+    margin: auto;
+    font-size: 50px;
+    
+
+
+}
+
+.sub{
+
+display: flex;
+justify-content: center;
+align-items: center;
+width: 200px;
+margin: auto;
+}
+   
+/* .intro-content{
+    
+    position: relative;
+    width: 90%;
+    margin:  40% 0 0 0 ;
+   
+    align-items: center;
+    
+    
+  
+} */
+
+
+}
+/*SECTION TWO'S STYLING*/
+
+
