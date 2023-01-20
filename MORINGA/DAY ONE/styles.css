@@ -13,10 +13,10 @@
   color: #fff;
 }
 
-.container-fluid{
+.d-flex.p-2.bd-highlight{
   
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   cursor: pointer;
