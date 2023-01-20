@@ -13,7 +13,7 @@
   color: #fff;
 }
 
-.d-flex.p-2.bd-highlight{
+#card-container{
   
   display: flex;
   justify-content: space-evenly;

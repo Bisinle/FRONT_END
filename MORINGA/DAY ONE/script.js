@@ -9,12 +9,27 @@ const options = {
 fetch('https://moviesdatabase.p.rapidapi.com/titles/x/upcoming', options)
 	.then(response => response.json())
 	.then((response) =>{
-		Object.values(response).forEach(arr =>{
-			//console.log(arr);
-			for(key in arr){
-				console.log(arr[key])
+		let data1=""
+		Object.values(response.results).forEach((item) => {
+			let src;
+			if(item.primaryImage === null){
+				src = "https://i.goojara.to/mb_228_228497.jpg"
 			}
+			else{
+				src = item.primaryImage.url
+			}
+			data1 += `<div class="card" style="border:#f0094d" >
+			<img src="${src}" class="card-img-top" alt="...">
+			<div class="card-body">
+				<p class="card-text">${item.titleText.text}</p>
+				<a href="#" class="btn btn-primary">Go somewhere</a>
+		
+			 
+			</div>
+		</div>`
 		})
+			document.getElementById('card-container').innerHTML= data1
+			
 	})
 
 
