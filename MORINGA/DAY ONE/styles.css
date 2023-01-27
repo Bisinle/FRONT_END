@@ -13,7 +13,7 @@
   color: #fff;
 }
 
-#card-container{
+.container-fluid{
   
   display: flex;
   justify-content: space-evenly;
@@ -48,7 +48,7 @@
   border:2px solid #f0094d;
   width: 100%;
   margin: auto;
-  font-size: 10px;
+  font-size: 5px;
   border-radius: 25px/100px;
   transition: 0.5s;
 }

@@ -18,7 +18,7 @@ fetch('https://moviesdatabase.p.rapidapi.com/titles/x/upcoming', options)
 			else{
 				src = item.primaryImage.url
 			}
-			data1 += `<div class="card" style="border:#f0094d" >
+			data1 +=  `<div class="card" style="border:#f0094d" >
 			<img src="${src}" class="card-img-top" alt="...">
 			<div class="card-body">
 				<p class="card-text">${item.titleText.text}</p>
@@ -28,7 +28,7 @@ fetch('https://moviesdatabase.p.rapidapi.com/titles/x/upcoming', options)
 			</div>
 		</div>`
 		})
-			document.getElementById('card-container').innerHTML= data1
+			document.getElementsByClassName('container-fluid').innerHTML= data1
 			
 	})
 
