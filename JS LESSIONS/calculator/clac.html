@@ -5,39 +5,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="calc.css">
-  <title>Document</title>
+  <title>Calculator</title>
 </head>
 <body> 
   <div class="container">
    
    
-    <div class="input">0</div>
-    <div class="rows">
-      <div class="numbers">7</div>
-      <div class="numbers">8</div>
-      <div class="numbers">9</div>
-      <div class="numbers">/</div>
-    </div>
+            <input type="text" id="display"  >
 
-    <div class="rows">
-      <div class="numbers">4</div>
-      <div class="numbers">5</div>
-      <div class="numbers">6</div>
-      <div class="numbers">x</div>
-    </div>
-
-    <div class="rows">
-      <div class="numbers">1</div>
-      <div class="numbers">2</div>
-      <div class="numbers">3</div>
-      <div class="numbers">-</div>
-    </div>
    
-   <div class="rows">
-      <div class="numbers">0</div>
-      <div class="numbers">.</div>
-      <div class="numbers">+</div>
-      <div class="numbers">=</div>
+      <div class="rows">
+        <buttons class=" clear"  >C</buttons>
+        <buttons class="openbracket "  onclick="calc('(')">(</buttons>
+        <buttons class="closebracket"  onclick="calc(')')">)</buttons>
+        <buttons class=" DEL" >←</buttons>    
+        <buttons class="numbers"  onclick="calc(7)">7</buttons>
+        <buttons class="numbers"  onclick="calc(8)" >8</buttons>
+        <buttons class="numbers"  onclick="calc(9)" >9</buttons>
+        <buttons class="divide"  onclick="calc('/')" >/</buttons>    
+        <buttons class="numbers"  onclick="calc(4)">4</buttons>
+        <buttons class="numbers"  onclick="calc(5)">5</buttons>
+        <buttons class="numbers"  onclick="calc(6)">6</buttons>
+        <buttons class="multiplication"  onclick="calc('*')">*</buttons>    
+        <buttons class="numbers"  onclick="calc(1)">1</buttons>
+        <buttons class="numbers"  onclick="calc(2)">2</buttons>
+        <buttons class="numbers"  onclick="calc(3)">3</buttons>
+        <buttons class="numbers"  onclick="calc('-')">-</buttons>   
+        <buttons class="numbers"  onclick="calc(0)">0</buttons>
+        <buttons class="numbers"  onclick="calc('.')">.</buttons>
+        <buttons class="  addition"  onclick="calc('+')">+</buttons>
+        <buttons class=" equal" onclick="nat()" >=</buttons>
+        
     </div>
     
 
@@ -51,20 +49,17 @@
 
     
 
-    <script >
-    let CalcNumbers = document.querySelectorAll(".numbers");
-      let CalcInput = document.querySelector(".input");
+    <script defer src="calc.js">
+  
       
+      // let Sp = 0;
+      //   for(let i=0; i<=16; i++ ){
+      //   CalcNumbers[i].addEventListener("click",()=>{
+      //     Sp += CalcNumbers ;
+      //     CalcInput.innerHTML = Sp;
       
-      
-      let Sp = 0;
-        for(let i=0; i<=16; i++ ){
-        CalcNumbers[i].addEventListener("click",()=>{
-          Sp += CalcNumbers ;
-          CalcInput.innerHTML = Sp;
-      
-        })
-      }
+      //   })
+      // }
       
       
       </script>

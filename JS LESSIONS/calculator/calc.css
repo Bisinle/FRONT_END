@@ -45,50 +45,66 @@
 
 
 
-
 body{
-  background-color: #333;
+  background-color: #222;
 }
 
 
 .container{
-  background-color: #f0094d;
-  width: 200px;
+  
+  width: 250px;
+  height: 350px;
   position: absolute;
-  transform: translate(50%,50%);
+  transform: translate(50%,30%);
+  right: 50%;
+  padding: 5px;
+border-radius: 10px;
+  box-shadow: 0 0 5px 0   #eee;
 
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-
-  border-radius: 25px;
+ 
   
 }
-.input{
-  background-color: #ccc;
+#display{
+  background-color:#333;
+  border: 2px solid #333;
+ color: cyan;
   width: 80%;
-  border: 2px solid black;
+  height: 30px;
+  font-size: 25px; 
   border-radius: 20px;
   padding: 5px;
-  margin: 10px;
+  margin: 10px 10px 30px 10px;
   text-align: end;
-}
-.rows{
- 
-  margin: 2px;
-  display: flex;
+  box-shadow: 0px 0px 2px 2px #222;
   
 }
 
-.numbers{
-  border-radius: 5px;
-  background-color: #666;
-  color: white;
-  margin: 3px;
+.rows{ 
+  margin: 2px;
+  display: flex;  
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.rows buttons{
+  font-weight: bolder;
+  border-radius: 100%;
+  color: #fff;
+  box-shadow: 0 0 5px 0 #555;
+  margin: 5px;
   text-align: center;
   width: 40px;
-box-shadow: 0 0 5px 2px black;
-cursor: pointer;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 } 
+
+.rows buttons:hover{
+  background-color: ;
+  box-shadow: 0 0 5px 0 #9f9;
+
+}
