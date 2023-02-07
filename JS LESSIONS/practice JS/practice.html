@@ -4,10 +4,64 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+.btngroup{
+  
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+
+}
+.btn{
+  border-radius: 20px;
+  border: 2px solid lime;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.btn:nth-child(1){
+  background-color: black;
+  color: white;
+
+  
+}
+.btn:nth-child(2){
+  background-color: slateblue;
+  color: white;
+  
+}.btn:nth-child(3){
+  background-color: coral;
+  color: white;
+  
+}.btn:nth-child(4){
+  background-color: firebrick;
+  color: white;
+  
+}.btn:nth-child(5){
+  background-color: cyan;
+  color: white;
+  
+}
+
+
+  </style>
   <title>JS practice</title>
 </head>
-<body>
-<h1>BOSS CODE</h1>
+<body >
+<h1 class="header">BOSSMAN CODE</h1>
+
+
+<br>
+<div class="btngroup">
+<button class="btn" onclick="black()">Black</button>
+<button class="btn" onclick="slateblue()">purple</button>
+<button class="btn" onclick="coral()">Orange</button>
+<button class="btn" onclick="firebrick()">Red</button>
+<button class="btn" onclick="cyan()">Cyan</button>
+</div>
+
 
 <!--
   <label id="myLabel" >Enter you values</label> <br>
@@ -17,7 +71,6 @@
 
   
 -->
-
-<script src="SWITCH.js"></script>
+<script src="darkMode.js"></script>
 </body>
 </html>

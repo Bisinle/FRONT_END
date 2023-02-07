@@ -6,22 +6,22 @@ let num2 = parseInt(prompt("Enter the second  number "));
 
 switch(operator){
   case "+":
-    document.write(`<h1>${num1 + num2 }</h1>`);
+    document.write(`<h1> Result is: ${num1 + num2 }</h1>`);
     break;
 
-    case "-":
-      document.write(num1 - num2);
+    case "-": 
+    document.write(`<h1> Result is: ${num1 - num2 }</h1>`);
       break;
   case "*":
-    document.write(num1 * num2);
+    document.write(`<h1> Result is: ${num1 * num2 }</h1>`);
     break;
 
-  case "-":
-    document.write(num1 / num2);
+  case "/":
+    document.write(`<h1> Result is: ${num1 / num2 }</h1>`);
     break;
 
     default:
-      document.write("SYNTAX ERROR!!")
+      document.write(`<h1> SYNTAX ERROR!! </h1>`);
   
       
 }
