@@ -3,7 +3,7 @@
 
 
 function black(){
-  document.body.style.backgroundColor = '#000';
+  document.body.style.backgroundColor  = '#000';
   document.querySelector(".header").style.color = "#fff";
 
 }

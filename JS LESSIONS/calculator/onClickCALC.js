@@ -25,15 +25,9 @@ let equal = document.querySelector(".equal");
 let calc=(number)=>{
   result.value +=number;
 
-  //  if(number !=='+'){
 
-//       result.value = `${number +number} `;
-    
-  
-//   }
 }
-  let nat=(number)=>{
-  
+  let results=(number)=>{  
    result.value= eval(result.value);
   }
 
