@@ -1,0 +1,93 @@
+
+.container-fluid{
+  background-color: coral;
+  width: 80%;
+  margin: auto;
+  
+  box-shadow: 0px 0px 5px 5px #ccc ;
+  border-radius: 5px;
+  text-align: center;
+  
+}
+
+.container-fluid h1{
+  width: calc(80%);
+  margin: 20px auto   ;
+  padding: 0;
+
+}
+.topdiv {
+
+  width: 80%;
+  margin: auto;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;  
+
+
+  
+
+}
+
+button{
+  width: calc(20%);
+  border: none;
+  font-size: 20px;
+  
+    
+
+}
+
+ #myInput{
+  width: calc(90%);
+  border: none;
+  height: 40px;
+  font-size: 20px;
+  padding: 5px;
+  
+  
+  
+ }
+
+  .myUL{
+    background-color: #999;
+    list-style-type: none;
+    padding-left: 0px;
+   
+  }
+  
+  .myUL li{
+    width: calc(".myUL");
+    background-color: #eee;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    
+
+
+  }
+  .myUL li:hover{
+    background-color: #ccc;
+  }
+  ul li:nth-child(odd) {
+    background: #444;
+    color: white;
+  }
+ 
+  ul li:nth-child(even) {
+    background: #22084d;
+    color: white;
+  }
+  .close{
+    width: 20px;
+    text-align:center ;
+    background-color: none;
+  }
+
+ .myUL li.checked{
+
+  text-decoration: line-through;
+  font-weight: lighter;
+ }
+ 

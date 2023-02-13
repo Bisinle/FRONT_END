@@ -1,14 +1,22 @@
 
 
 let myNodelist = document.getElementsByTagName("li");
+document.creat
 var i;
 for  (i = 0; i < myNodelist.length; i++) {
   var span = document.createElement("span");
-  var text =  document.createTextNode(" X");
+  //var span2 = document.createElement("span")
+  var close =  document.createTextNode(" \u00D7");
+  //var edit = document.createTextNode("Edit")
+  
   span.className="close";
-  span.style.background = "slateblue";
-  span.appendChild(text);
+  //span.id="yellow";
+  
+  span.appendChild(close);
+ // span2.appendChild(edit)
   myNodelist[i].appendChild(span)
+  //myNodelist[i].appendChild(span2)
+  
 }
 
 //access the span thru it's class name
@@ -44,7 +52,7 @@ function newElement(){
  document.getElementById("myInput").value = "";
 
  var span = document.createElement("sapan");
- var text = document.createTextNode(" X")
+ var text = document.createTextNode(" \u00D7")
 
  span.className = "close";
  span.appendChild(text);
