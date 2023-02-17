@@ -1,22 +1,19 @@
 body {
+  padding: 0px;
   margin: 0;
   text-align: center;
   font-family: 'Merriweather', serif;
+  
 }
 
-h1 {
-  font-family: 'Sacramento', cursive;
-  font-size: 5.625rem;
-  color: #66BFBF;
-  margin-top: 50px auto 0 auto;
 
-}
 
 h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   font-weight: normal;
   color: #66BFBF;
+  margin: 0px;
 
 }
 
@@ -44,39 +41,79 @@ a:hover {
 }
 
 
-.top-container {
-  background-color: #000000;
-  padding-top: 100px;
+.topcontainer{
+  background-color: #000;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.topcontainer ul{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  list-style-type: none;
+  color: white;
+  flex-wrap: wrap;
   position: relative;
-  height:1000px ;
+  padding: 0px;
+  width: calc("li");
+}
+.topcontainer ul li{
+  margin: 10px;
+  color: #00C2BA;
+  cursor: pointer;
+  padding: 10px;
+  height: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  transition: 1s;
+
+}
+
+.topcontainer ul li:hover{
+  
+ 
+  border-radius: 25px;
+  border-bottom: 2px solid #00C2BA;
+  
+
+
+  
+ 
+}
+
+.topcontainer img{
+  width: 100px;
+  border-radius: 100%;
+
 }
 
 .middle-container {
-  margin: 100px 0;
+
+  background-color: #000;
+  color: white;
   
 
 }
 
 hr {
+  color: #f0094d;
+  
   border-style: none;
   border-style: dotted none none none;
-  margin: 100px auto;
+  margin: 50px auto;
   height: 20px;
   width: 10%;
   border-width: 10px;
-  background-color: white;
+  
 
 }
 
-.profile img {
-  height: 200px;
-  width: 180px;
-  border-radius: 100px;
-}
+
 
 .image-one {
 
-  width: 10%;
+  width: 20%;
   border-radius: 100%;
   float: left;
   padding: 30px;
@@ -85,7 +122,7 @@ hr {
 }
 
 .image-two {
-  width: 10%;
+  width: 20%;
   border-radius: 100%;
   float: right;
   padding: 30px;
@@ -93,14 +130,14 @@ hr {
 }
 
 .image-three {
-  width: 10%;
+  width: 20%;
   float: left;
   padding: 30px;
 }
 
 .skill-row {
   width: 50%;
-  margin: 100px auto 100px auto;
+  margin: 30px auto 100px auto;
   text-align: left;
   line-height: 2;
 }
@@ -113,41 +150,35 @@ hr {
 .intro-bio {
   width: 80%;
   margin: auto;
+  color:#f0094d;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
-.top-cloud {
-  position: absolute;
-  right: 200px;
-  top: 50px;
-}
 
-.bottom-cloud {
-  position: absolute;
-  bottom: 300px;
-  left: 200px;
-}
 
 .contact-me {
   padding: 10px;
-  height: 300px;
+  
   align-items: center;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+ 
+  
 }
 
 .contact-message {
   width: 40%;
-  margin: 40px auto 60px;
+  margin: 0px auto 60px;
 }
 
 
 
 
 
-.bottom-container {
-  background-color: #000000;
-  margin-top: 30px;
-  padding-top: 20px;
-}
+
 
 .btn {
   background: #11cdd4;
@@ -164,6 +195,7 @@ hr {
   font-size: 20px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
+ 
   transition: 1s;
 }
 
@@ -175,9 +207,9 @@ hr {
 }
 
 .bottom-container {
-  background-color: #000000;
+  background-color: #000;
   padding: 30px;
-  margin-bottom: 0;
+  margin-bottom: 0px;
 
 }
 
@@ -185,4 +217,31 @@ hr {
   color: #11999E;
   font-size: 0.75rem;
   padding: 10px 0;
+  margin: 0px;
+}
+
+.service-container{
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin:30px 0;
+
+}
+.service-container h1{
+  display: block;
+  width: 100%;
+  color: #f0094d;
+}
+.serviceONE{
+  background-color: rgb(3, 51, 51);
+  width: 30%;
+  margin: 1%;
+  border: 2px solid cyan;
+  border-radius: 10px;
+  color: wheat;
+}
+.serviceONE h3{
+  color: #f0094d;
 }

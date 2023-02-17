@@ -82,7 +82,32 @@ let users2 = [
    return `${element.firstName}  ${element.lastName}`;
   
  })
- console.log(usersFullNames2)
+console.log(usersFullNames2)
+
+
+console.log("*****************");
+/** passing the  ...spreaded array into my fucntion and then accepring in  ...rest format
+  meaning i collected or gathered together
+  point(2) (without the ...) allows us to display what we collected = [7,9,7,8,6,5]
+  so i looped thru it using may()
+  if we console.log(...collect) we'll strip our array of it's coat and have 7,9,7,8,6,5
+
+ */
+let arr=[1,2,3,4,5,6,7,8]
+
+function myFunction(...collect){
+  // point1..console.log(callect)
+ let NewCollect = collect.map((element)=>{
+  return element*2;
+ })
+ return NewCollect;
+ 
+}
+
+/** below i am spreading the returned array and printing it as digits (not an array) */
+console.log(...myFunction(7,9,7,8,6,5));
+
+
 
 
 

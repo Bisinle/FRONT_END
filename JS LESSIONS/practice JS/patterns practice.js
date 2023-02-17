@@ -67,6 +67,7 @@ function pattern4(){
 
 
 
+
 //FUCNTION CALLS  
 // pattern1(); 
 // console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n");
