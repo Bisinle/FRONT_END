@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './expense-Style/styles.css'
 import ExpenseDate from './ExpenseDate.js'
+import GeneratingID from './GeneratingID'
 
 
 
@@ -17,7 +18,7 @@ let listappend = dataLength.map((item) => {
   return(
     <div class="table">
       <li class="tableRow" key={item.id}>
-       
+      <h6 class="cell"><GeneratingID id={item.id}/></h6>
         <h6 class="cell">{item.name}</h6>
         <h6 class="cell">{"Ksh "  + item.amount }</h6>
         <h6 class="cell"><ExpenseDate date={item.date}/></h6>
